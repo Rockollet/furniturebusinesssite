@@ -1,0 +1,52 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "vetur.experimental.templateInterpolationService": true,
+    "vetur.validation.interpolation": false,
+    "vetur.trace.server": "messages",
+    "vetur.validation.templateProps": true,
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "eslint.format.enable": true,
+    "editor.formatOnSave": false,
+    "eslint.validate": [
+      "typescript",
+      "javascript",
+      "vue"
+    ],
+    "eslint.workingDirectories": [
+      {
+        "mode": "auto"
+      }
+    ],
+    "[vue]": {
+      "editor.defaultFormatter": "octref.vetur"
+    },
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatter.js": "prettier-eslint",
+	"vetur.format.defaultFormatter.ts": "prettier-tslint",
+	"git.ignoreLimitWarning": true
+  }
+}
