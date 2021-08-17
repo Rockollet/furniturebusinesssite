@@ -1,17 +1,18 @@
 <template>
-  <v-img
-    :src="require('/src/assets/images/kitchen.png')"
-    contain
-    eager
-  />
-<v-row>
-    <v-col cols="auto">
-      <img
-        :src="require('/src/assets/images/title.png')"
-        contain
-      >
-    </v-col>
-  </v-row>
+  <div v-frag>
+    <v-img
+      :src="require('/src/assets/images/headerImage.png')"
+      class="hidden-sm-and-down"
+      contain
+      eager
+    />
+    <v-img
+      :src="require('/src/assets/images/headerImageForSmAndDown.png')"
+      class="hidden-md-and-up"
+      contain
+      eager
+    />
+  </div>
 </template>
 
 <script lang="ts">

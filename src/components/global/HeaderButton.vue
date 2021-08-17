@@ -4,6 +4,7 @@
       v-for="button in buttons"
       :key="button.id"
       :target="button.target"
+      :color="ButtonColor"
       :href="button.href"
       :to="button.to"
       rounded
@@ -40,11 +41,25 @@ export default Vue.extend({
         case 'sm':
           return 30;
         case 'md':
-          return 40;
+          return 30;
         case 'lg':
-          return 45;
+          return 40;
         case 'xl':
           return 50;
+      }
+    },
+    ButtonColor(): string {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs':
+          return 'white';
+        case 'sm':
+          return 'white';
+        case 'md':
+          return 'black';
+        case 'lg':
+          return 'black';
+        case 'xl':
+          return 'black';
       }
     },
   },
