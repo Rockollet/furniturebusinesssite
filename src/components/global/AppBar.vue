@@ -2,22 +2,25 @@
   <v-card class="overflow-hidden">
     <v-app-bar
       color="transparent"
+      hide-on-scroll
       :height="AppBarHeight"
       flat
       app
     >
-      <v-container
-        justify="end"
-      >
+    <v-row align="start" justify="start">
+      <v-col cols="sm-4 md-4 lg-3 xl-3">
+      <v-img
+      :src="require('/src/assets/icons/paliteicon.png')"
+      :height="IconHeight"
+      contain
+    />
+    </v-col>
+    </v-row>
           <v-spacer />
-          <v-row
-          justify="end">
           <HeaderButton
             :buttons="buttons"
             :height="IconHeight"
           />
-          </v-row>
-      </v-container>
     </v-app-bar>
   </v-card>
 </template>
@@ -73,11 +76,15 @@ export default Vue.extend({
         case 'md':
           return '85%';
         case 'lg':
-          return '85%';
+          return '110%';
         case 'xl':
-          return '85%';
+          return '120%';
       }
     },
   },
 });
 </script>
+
+<style scoped>
+
+</style>
