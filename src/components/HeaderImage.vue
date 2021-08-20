@@ -3,7 +3,7 @@
     <v-img
       :src="require('/src/assets/images/headerImage.png')"
       min-height="922"
-      max-height="922"
+      position="left center"
     >
       <v-row
         justify="center"
