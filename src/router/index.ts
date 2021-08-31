@@ -7,7 +7,7 @@ const routes: RouteConfig[] = [
   {
     path: '/',
     name: 'home',
-    component: () => import(/* webpackChunkName: "Home" */ '../components/HeaderImage.vue'),
+    component: () => import(/* webpackChunkName: "Home" */ '@/pages/Home.vue'),
   },
 ];
 

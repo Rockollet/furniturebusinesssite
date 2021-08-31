@@ -1,8 +1,11 @@
 <template>
   <v-app>
-	<AppBar />
+    <AppBar />
     <v-main class="ma-0 pa-0">
-      <v-container fluid class="ma-0 pa-0">
+      <v-container
+        fluid
+        class="ma-0 pa-0"
+      >
         <router-view />
       </v-container>
     </v-main>
@@ -24,7 +27,7 @@ import AppBar from '@/components/global/AppBar.vue';
 export default Vue.extend({
   name: 'App',
 
-  components: {AppBar},
+  components: { AppBar },
 
   data: () => ({
     //

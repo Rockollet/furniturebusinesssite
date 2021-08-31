@@ -7,15 +7,6 @@
       flat
       app
     >
-    <v-row align="start" justify="start">
-      <v-col cols="sm-4 md-4 lg-3 xl-3">
-      <v-img
-      :src="require('/src/assets/icons/paliteicon.png')"
-      :height="IconHeight"
-      contain
-    />
-    </v-col>
-    </v-row>
           <v-spacer />
           <HeaderButton
             :buttons="buttons"
@@ -60,7 +51,7 @@ export default Vue.extend({
         case 'sm':
           return 30;
         case 'md':
-          return 40;
+          return 45;
         case 'lg':
           return 45;
         case 'xl':
