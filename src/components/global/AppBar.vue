@@ -44,20 +44,6 @@ export default Vue.extend({
     };
   },
   computed: {
-    IconHeight() {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs':
-          return 20;
-        case 'sm':
-          return 30;
-        case 'md':
-          return 45;
-        case 'lg':
-          return 45;
-        case 'xl':
-          return 50;
-      }
-    },
     AppBarHeight() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':

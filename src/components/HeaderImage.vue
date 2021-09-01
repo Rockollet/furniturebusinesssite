@@ -2,7 +2,7 @@
   <div v-frag>
     <v-img
       :src="require('/src/assets/images/headerImage.png')"
-      min-height="620"
+      min-height="600"
       position="left center"
     >
       <v-row

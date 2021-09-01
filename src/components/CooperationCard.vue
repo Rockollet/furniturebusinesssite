@@ -80,6 +80,7 @@ export default Vue.extend({
 <style scoped>
 .card {
   margin-top: 80px;
+  margin-bottom: 160px;
 }
 .text {
   font-family: Playfair Display;
