@@ -15,11 +15,11 @@
         >
           <h1
             class="text subheading font-weight-light"
-            :style="TitleSize"
+            :style="titleSize"
           >Приглашаю к <br> сотрудничеству на <br> постоянной основе</h1>
           <h1
             class="text font-weight-light subtitle mt-5"
-            :style="SubtitleSize"
+            :style="subtitleSize"
           >Можете позвонить нам в любое <br> удобное для Вас время</h1>
         </v-col>
         <v-col
@@ -45,7 +45,7 @@
 import Vue from 'vue';
 export default Vue.extend({
   computed: {
-    TitleSize() {
+    titleSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return 'font-size:1.9em';
@@ -57,9 +57,11 @@ export default Vue.extend({
           return 'font-size:2.6em';
         case 'xl':
           return 'font-size:2.7em';
+        default:
+          return 'font-size:2.6em';
       }
     },
-    SubtitleSize() {
+    subtitleSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return 'font-size:1.1em';
@@ -70,6 +72,8 @@ export default Vue.extend({
         case 'lg':
           return 'font-size:1.6em';
         case 'xl':
+          return 'font-size:1.6em';
+        default:
           return 'font-size:1.6em';
       }
     },
