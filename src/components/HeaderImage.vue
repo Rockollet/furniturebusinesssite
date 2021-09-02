@@ -1,48 +1,46 @@
 <template>
-  <div v-frag>
-    <v-img
-      :src="require('/src/assets/images/headerImage.png')"
-      min-height="600"
-      position="left center"
+  <v-img
+    :src="require('/src/assets/images/headerImage.png')"
+    min-height="600"
+    position="left center"
+  >
+    <v-row
+      justify="center"
+      align="center"
     >
-      <v-row
-        justify="center"
-        align="center"
+      <v-col
+        class="text-left"
+        cols="11"
       >
-        <v-col
-          class="text-left"
-          cols="11"
+        <h1
+          class="subheading text"
+          :style="titleSize"
         >
-          <h1
-            class="subheading text"
-            :style="TitleSize"
-          >
-            Покраска <br> мебельных фасадов
-          </h1>
-          <h1
-            class="font-weight-light text"
-            :style="SubtitleSize"
-          >
-            В Набережных <br> Челнах
-          </h1>
-          <h1
-            class="font-weight-light quality text"
-            :style="SubtitleSize"
-          >
-            Надежное качество <br>
-            Опыт работы более 10 лет
-          </h1>
-        </v-col>
-      </v-row>
-    </v-img>
-  </div>
+          Покраска <br> мебельных фасадов
+        </h1>
+        <h1
+          class="font-weight-light text"
+          :style="subtitleSize"
+        >
+          В Набережных <br> Челнах
+        </h1>
+        <h1
+          class="font-weight-light quality text"
+          :style="subtitleSize"
+        >
+          Надежное качество <br>
+          Опыт работы более 10 лет
+        </h1>
+      </v-col>
+    </v-row>
+  </v-img>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 export default Vue.extend({
   computed: {
-    TitleSize() {
+    titleSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return 'font-size:2.4em';
@@ -56,7 +54,7 @@ export default Vue.extend({
           return 'font-size:5em';
       }
     },
-    SubtitleSize() {
+    subtitleSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return 'font-size:1.4em';

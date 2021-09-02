@@ -22,7 +22,7 @@
             <v-card-text>
               <div
                 class="text font-weight-light"
-                :style="TitleSize"
+                :style="titleSize"
               >Виды и назначение <br> лакокрасочных <br> покрытий</div>
             </v-card-text>
 
@@ -47,7 +47,7 @@
 import Vue from 'vue';
 export default Vue.extend({
   computed: {
-    TitleSize() {
+    titleSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return 'font-size:2.1em';
