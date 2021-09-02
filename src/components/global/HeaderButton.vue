@@ -1,40 +1,28 @@
 <template>
-  <div>
     <v-btn
-      v-for="button in buttons"
-      :key="button.id"
-      :target="button.target"
-      :href="button.href"
-      :to="button.to"
-      :dark="$vuetify.breakpoint.smAndDown"
-      rounded
-      text
-    >
-      <v-icon :size="IconHeight"> {{ button.icon }}</v-icon>
-    </v-btn>
-  </div>
+    :target="value.target"
+    :href="value.href"
+    :to="value.to"
+    :dark="$vuetify.breakpoint.smAndDown"
+    rounded
+    text>
+    <v-icon :size="iconHeight"> {{ value.icon }}</v-icon>
+  </v-btn>
 </template>
 
 <script lang="ts">
 import Vue, { PropType } from 'vue';
-
-interface HeaderButtonType {
-  id: string;
-  to: string;
-  icon: string;
-  target: string | null;
-  href: string | Location;
-}
+import { HeaderButtonType } from './header-button';
 
 export default Vue.extend({
   props: {
-    buttons: {
-      type: Array as PropType<HeaderButtonType[]>,
+    value: {
+      type: Object as PropType<HeaderButtonType>,
       required: true,
     },
   },
   computed: {
-    IconHeight(): number {
+    iconHeight(): number {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return 30;
@@ -46,21 +34,23 @@ export default Vue.extend({
           return 40;
         case 'xl':
           return 50;
+        default:
+          return 40;
       }
     },
   },
 });
 </script>
-
-<style scoped>
+<style lang="scss" scoped>
 .v-btn {
   font-weight: normal;
-}
-.v-btn :hover {
-  color: rgba(0, 83, 176, 100);
-  transition: 0.1s;
-}
-.v-btn::before {
-  background-color: transparent;
+
+  :hover {
+    color: rgba(0, 83, 176, 100);
+    transition: 0.1s;
+  }
+  &:before {
+    background-color: transparent;
+  }
 }
 </style>

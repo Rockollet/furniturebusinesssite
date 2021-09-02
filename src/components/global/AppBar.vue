@@ -1,23 +1,18 @@
 <template>
-  <v-card class="overflow-hidden">
     <v-app-bar
       color="transparent"
       hide-on-scroll
-      :height="AppBarHeight"
+      :height="appBarHeight"
       flat
-      app
-    >
-          <v-spacer />
-          <HeaderButton
-            :buttons="buttons"
-            :height="IconHeight"
-          />
+      app>
+      <v-spacer />
+      <HeaderButton v-for="btn in buttons" :key="btn.id" :value="btn"/>
     </v-app-bar>
-  </v-card>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import { HeaderButtonType } from './header-button';
 import HeaderButton from './HeaderButton.vue';
 
 export default Vue.extend({
@@ -40,11 +35,11 @@ export default Vue.extend({
           target: '_blank',
           href: 'https://instagram.com/pokraska_chelny',
         },
-      ],
+      ] as HeaderButtonType[],
     };
   },
   computed: {
-    AppBarHeight() {
+    appBarHeight() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return '80%';
@@ -56,12 +51,10 @@ export default Vue.extend({
           return '110%';
         case 'xl':
           return '120%';
+        default:
+          return '100%';
       }
     },
   },
 });
 </script>
-
-<style scoped>
-
-</style>
