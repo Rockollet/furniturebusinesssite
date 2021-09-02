@@ -14,19 +14,19 @@
       >
         <h1
           class="subheading text"
-          :style="TitleSize"
+          :style="titleSize"
         >
           Покраска <br> мебельных фасадов
         </h1>
         <h1
           class="font-weight-light text"
-          :style="SubtitleSize"
+          :style="subtitleSize"
         >
           В Набережных <br> Челнах
         </h1>
         <h1
           class="font-weight-light quality text"
-          :style="SubtitleSize"
+          :style="subtitleSize"
         >
           Надежное качество <br>
           Опыт работы более 10 лет
@@ -40,7 +40,7 @@
 import Vue from 'vue';
 export default Vue.extend({
   computed: {
-    TitleSize() {
+    titleSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return 'font-size:2.4em';
@@ -54,7 +54,7 @@ export default Vue.extend({
           return 'font-size:5em';
       }
     },
-    SubtitleSize() {
+    subtitleSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return 'font-size:1.4em';
