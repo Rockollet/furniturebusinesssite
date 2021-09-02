@@ -43,7 +43,7 @@ export default Vue.extend({
     titleSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return 'font-size:2.4em';
+          return 'font-size:2.2em';
         case 'sm':
           return 'font-size:3.0em';
         case 'md':

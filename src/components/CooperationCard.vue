@@ -27,6 +27,7 @@
           cols="auto"
         >
           <v-btn
+            :href="`tel:+79179256292`"
             class="mb-12"
             color="#efc42b"
             width="200"
