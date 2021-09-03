@@ -33,7 +33,7 @@
                 outlined
                 rounded
               >
-                Смотеть все
+                Смотреть все
               </v-btn>
             </v-card-actions>
           </v-col>
