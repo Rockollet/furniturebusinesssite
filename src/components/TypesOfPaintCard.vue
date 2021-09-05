@@ -27,6 +27,7 @@
             </v-card-text>
 
             <v-card-actions>
+              <router-link :to="{ name: 'paints' }">
               <v-btn
                 width="200"
                 height="55"
@@ -35,6 +36,7 @@
               >
                 Смотеть все
               </v-btn>
+              </router-link>
             </v-card-actions>
           </v-col>
         </v-row>
@@ -72,5 +74,8 @@ export default Vue.extend({
 }
 .v-card {
   margin-top: 80px;
+}
+a {
+  text-decoration: none;
 }
 </style>

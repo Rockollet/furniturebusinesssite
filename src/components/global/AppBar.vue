@@ -27,7 +27,7 @@ export default Vue.extend({
           icon: 'mdi-whatsapp',
           target: '_blank',
           href:
-            'https://api.whatsapp.com/send?phone=89179256292&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20',
+            'https://api.whatsapp.com/send?phone=+79179256292&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20',
         },
         {
           id: 'instagram',

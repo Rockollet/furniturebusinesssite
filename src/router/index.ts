@@ -9,6 +9,11 @@ const routes: RouteConfig[] = [
     name: 'home',
     component: () => import(/* webpackChunkName: "Home" */ '@/pages/Home.vue'),
   },
+  {
+    path: '/paints',
+    name: 'paints',
+    component: () => import(/* webpackChunkName: "LocationOnMap" */ '../pages/PaintsPage.vue'),
+  },
 ];
 
 const router = new VueRouter({
