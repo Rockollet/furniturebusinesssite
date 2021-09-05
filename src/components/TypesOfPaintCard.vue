@@ -34,7 +34,7 @@
                 outlined
                 rounded
               >
-                Смотеть все
+                Смотреть все
               </v-btn>
               </router-link>
             </v-card-actions>
