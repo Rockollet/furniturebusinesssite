@@ -1,8 +1,9 @@
 <template>
   <v-img
     :src="require('/src/assets/images/headerImage.png')"
-    min-height="600"
     position="left center"
+    min-height="600"
+    eager
   >
     <v-row
       justify="center"

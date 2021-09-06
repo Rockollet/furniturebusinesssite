@@ -4,6 +4,7 @@
       :src="require('/src/assets/images/cards/cooperation.png')"
       min-height="300"
       max-height="330"
+      eager
     >
       <v-row
         justify="center"

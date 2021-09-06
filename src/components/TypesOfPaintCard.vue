@@ -10,6 +10,7 @@
             :src="require('/src/assets/images/cards/cardImage.png')"
             max-width="700"
             contain
+            eager
           />
         </v-col>
         <v-row

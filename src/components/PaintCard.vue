@@ -8,6 +8,7 @@
       :src="require(`/src/assets/images/cards/${paint.image}`)"
       class="white--text align-end"
       contain
+      eager
     >
       <v-card-title> {{ paint.title }}</v-card-title>
     </v-img>
