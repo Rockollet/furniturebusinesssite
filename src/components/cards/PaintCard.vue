@@ -15,17 +15,17 @@
 
     <v-card-text class="text--primary">
       <div> {{ paint.text }} </div>
-
     </v-card-text>
   </v-card>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
+import { PaintCardType } from '@/components/cards/paint-card';
 export default Vue.extend({
   props: {
     paint: {
-      type: Object,
+      type: Object as PropType<PaintCardType>,
       required: true,
     },
   },

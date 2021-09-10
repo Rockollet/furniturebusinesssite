@@ -1,6 +1,8 @@
 <template>
   <v-col class="text">
-    <p class="pt-5">{{ new Date().getFullYear() }} &copy; Покраска мебельных фасадов PokraskaChelny</p>
+    <p class="pt-5">
+      {{ new Date().getFullYear() }} &copy; Покраска мебельных фасадов PokraskaChelny
+    </p>
   </v-col>
 </template>
 

@@ -1,13 +1,18 @@
 <template>
-    <v-app-bar
-      color="transparent"
-      hide-on-scroll
-      :height="appBarHeight"
-      flat
-      app>
-      <v-spacer />
-      <HeaderButton v-for="btn in buttons" :key="btn.id" :value="btn"/>
-    </v-app-bar>
+  <v-app-bar
+    color="transparent"
+    hide-on-scroll
+    :height="appBarHeight"
+    flat
+    app
+  >
+    <v-spacer />
+    <HeaderButton
+      v-for="btn in buttons"
+      :key="btn.id"
+      :value="btn"
+    />
+  </v-app-bar>
 </template>
 
 <script lang="ts">

@@ -17,7 +17,8 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import PaintCard from '@/components/PaintCard.vue';
+import PaintCard from '@/components/cards/PaintCard.vue';
+import { PaintCardType } from '@/components/cards/paint-card';
 export default Vue.extend({
   components: {
     PaintCard,
@@ -53,7 +54,7 @@ export default Vue.extend({
             'Фрезерованные фасады сочетают в себе функциональность и красоту, так как в производстве фрезерованных фасадов используют натуральный массив или МДФ, такой фасад прочен и долго служит, экологичен, безопасен, не привередлив в уходе и устойчив к механическим повреждениям.',
           image: 'paintspage/milled.png',
         },
-      ],
+      ] as PaintCardType[],
     };
   },
 });

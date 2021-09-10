@@ -17,11 +17,15 @@
           <h1
             class="text subheading font-weight-light"
             :style="titleSize"
-          >Приглашаю к <br> сотрудничеству на <br> постоянной основе</h1>
+          >
+            Приглашаю к <br> сотрудничеству на <br> постоянной основе
+          </h1>
           <h1
             class="text font-weight-light subtitle mt-5"
             :style="subtitleSize"
-          >Можете позвонить нам в любое <br> удобное для Вас время</h1>
+          >
+            Можете позвонить нам в любое <br> удобное для Вас время
+          </h1>
         </v-col>
         <v-col
           align-self="end"
@@ -85,8 +89,7 @@ export default Vue.extend({
 
 <style scoped>
 .card {
-  margin-top: 80px;
-  margin-bottom: 160px;
+  margin-bottom: 175px;
 }
 .text {
   font-family: Playfair Display;
@@ -97,7 +100,7 @@ export default Vue.extend({
   font-size: 1.4em;
 }
 .text-left {
-  margin-top: 9vh;
+  margin-top: 7vh;
 }
 .v-btn {
   text-transform: none;

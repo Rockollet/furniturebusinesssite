@@ -1,12 +1,15 @@
 <template>
-    <v-btn
+  <v-btn
     :target="value.target"
     :href="value.href"
     :to="value.to"
     :dark="$vuetify.breakpoint.smAndDown"
     rounded
-    text>
-    <v-icon :size="iconHeight"> {{ value.icon }}</v-icon>
+    text
+  >
+    <v-icon :size="iconHeight">
+      {{ value.icon }}
+    </v-icon>
   </v-btn>
 </template>
 
@@ -23,20 +26,23 @@ export default Vue.extend({
   },
   computed: {
     iconHeight(): number {
+      let height = null;
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return 30;
         case 'sm':
-          return 30;
         case 'md':
-          return 30;
+          height = 30;
+          break;
         case 'lg':
-          return 40;
+          height = 40;
+          break;
         case 'xl':
-          return 50;
+          height = 50;
+          break;
         default:
           return 40;
       }
+      return height;
     },
   },
 });

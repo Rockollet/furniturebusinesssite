@@ -42,32 +42,50 @@ import Vue from 'vue';
 export default Vue.extend({
   computed: {
     titleSize() {
+      let size = null;
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return 'font-size:2.2em';
+          size = 2.2;
+          break;
         case 'sm':
-          return 'font-size:3.0em';
+          size = 3.0;
+          break;
         case 'md':
-          return 'font-size:3.5em';
+          size = 3.5;
+          break;
         case 'lg':
-          return 'font-size:3.7em';
+          size = 3.7;
+          break;
         case 'xl':
-          return 'font-size:5em';
+          size = 5;
+          break;
+        default:
+          size = 3.7;
       }
+      return `font-size: ${size}em`;
     },
     subtitleSize() {
+      let size = null;
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return 'font-size:1.4em';
+          size = 1.4;
+          break;
         case 'sm':
-          return 'font-size:1.7em';
+          size = 1.7;
+          break;
         case 'md':
-          return 'font-size:2em';
+          size = 2;
+          break;
         case 'lg':
-          return 'font-size:2.1em';
+          size = 2.1;
+          break;
         case 'xl':
-          return 'font-size:2.9em';
+          size = 2.9;
+          break;
+        default:
+          size = 2.1;
       }
+      return `font-size: ${size}em`;
     },
   },
 });

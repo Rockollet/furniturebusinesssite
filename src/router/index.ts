@@ -7,7 +7,7 @@ const routes: RouteConfig[] = [
   {
     path: '/',
     name: 'home',
-    component: () => import(/* webpackChunkName: "Home" */ '@/pages/Home.vue'),
+    component: () => import(/* webpackChunkName: "Home" */ '../pages/Home.vue'),
   },
   {
     path: '/paints',
@@ -19,7 +19,7 @@ const routes: RouteConfig[] = [
 const router = new VueRouter({
   mode: 'history',
   routes,
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
     } else {

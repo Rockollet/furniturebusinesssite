@@ -5,7 +5,6 @@
     </v-row>
     <v-row
       justify="center"
-      class="mt-10"
     >
       <v-col cols="auto">
         <TypesOfPaintCard />
@@ -20,8 +19,8 @@
 <script lang="ts">
 import Vue from 'vue';
 import HeaderImage from '@/components/HeaderImage.vue';
-import TypesOfPaintCard from '@/components/TypesOfPaintCard.vue';
-import CooperationCard from '@/components/CooperationCard.vue';
+import TypesOfPaintCard from '@/components/cards/TypesOfPaintCard.vue';
+import CooperationCard from '@/components/cards/CooperationCard.vue';
 
 export default Vue.extend({
   components: {
@@ -36,3 +35,9 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped>
+.col {
+  margin-top: 65px;
+}
+</style>

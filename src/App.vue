@@ -28,7 +28,6 @@ import Footer from '@/components/global/Footer.vue';
 
 export default Vue.extend({
   name: 'App',
-
   components: {
     AppBar,
     Footer,
