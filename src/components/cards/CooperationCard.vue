@@ -2,17 +2,18 @@
   <div class="card">
     <v-img
       :src="require('/src/assets/images/cards/cooperation.png')"
-      min-height="300"
-      max-height="330"
+      height="350"
       eager
     >
       <v-row
+        :class="{'mt-12': $vuetify.breakpoint.smAndDown, 'mt-16': $vuetify.breakpoint.mdAndUp}"
         justify="center"
-        align="center"
       >
         <v-col
-          class="text-left"
+          class="text-center"
           cols="auto"
+          justify="center"
+          align="center"
         >
           <h1
             class="text subheading font-weight-light"
@@ -35,7 +36,7 @@
             :href="`tel:+79179256292`"
             class="mb-12"
             color="#efc42b"
-            width="200"
+            width="280"
             height="55"
             rounded
           >
@@ -88,9 +89,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.card {
-  margin-bottom: 175px;
-}
 .text {
   font-family: Playfair Display;
   line-height: 1em;
@@ -99,8 +97,8 @@ export default Vue.extend({
 .subtitle {
   font-size: 1.4em;
 }
-.text-left {
-  margin-top: 7vh;
+.text-center {
+  margin-top: ;
 }
 .v-btn {
   text-transform: none;

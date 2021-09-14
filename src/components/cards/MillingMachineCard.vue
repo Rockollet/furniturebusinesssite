@@ -4,7 +4,7 @@
       <v-row>
         <v-col align="center">
           <v-img
-            :src="require('/src/assets/images/cards/cardImage.png')"
+            :src="require('/src/assets/images/cards/millingmachine.png')"
             max-width="600"
             contain
             eager
@@ -20,9 +20,16 @@
                 class="text font-weight-light"
                 :style="titleSize"
               >
-                Виды лакокрасочных <br> покрытий
+                Декоративые ЗD панели <br>
+                под заказ
               </div>
             </v-card-text>
+            <v-card-subtitle
+              class="text font-weight-light subtitle"
+              :style="subtitleSize"
+            >
+              Изготавливаются на ЧПУ станке
+            </v-card-subtitle>
 
             <router-link :to="{ name: 'paints' }">
               <v-btn
@@ -32,7 +39,7 @@
                 outlined
                 rounded
               >
-                Смотреть все
+                Подробнее
               </v-btn>
             </router-link>
           </v-col>
@@ -60,6 +67,20 @@ export default Vue.extend({
       }
       return `font-size: ${size}em`;
     },
+    subtitleSize() {
+      let size = null;
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs':
+          size = 1;
+          break;
+        case 'sm':
+          size = 1;
+          break;
+        default:
+          size = 1;
+      }
+      return `font-size: ${size}em`;
+    },
   },
 });
 </script>
@@ -77,8 +98,5 @@ export default Vue.extend({
 }
 a {
   text-decoration: none;
-}
-.container {
-  margin-bottom: 175px;
 }
 </style>
