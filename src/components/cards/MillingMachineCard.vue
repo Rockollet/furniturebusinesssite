@@ -31,7 +31,7 @@
               Изготавливаются на ЧПУ станке
             </v-card-subtitle>
 
-            <router-link :to="{ name: 'paints' }">
+            <router-link :to="{ name: 'milling' }">
               <v-btn
                 class="mt-5"
                 width="300"

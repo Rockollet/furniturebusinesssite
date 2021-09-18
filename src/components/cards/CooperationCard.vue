@@ -97,9 +97,6 @@ export default Vue.extend({
 .subtitle {
   font-size: 1.4em;
 }
-.text-center {
-  margin-top: ;
-}
 .v-btn {
   text-transform: none;
 }

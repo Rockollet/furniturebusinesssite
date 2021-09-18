@@ -1,4 +1,4 @@
-export interface PaintCardType {
+export interface DescriptionCardType {
   id: number;
   title: string;
   text: string;
