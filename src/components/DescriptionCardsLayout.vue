@@ -36,4 +36,7 @@ export default Vue.extend({
 .container {
   margin-bottom: 120px;
 }
+.col {
+  flex-basis: auto;
+}
 </style>
